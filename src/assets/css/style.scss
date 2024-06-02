@@ -56,8 +56,15 @@ button {
     font-family: "Open Sans", sans-serif;
 }
 
+nav {
+    border: 1px solid;
+    color: black;
+    -webkit-text-fill-color: black;
+}
+
 section {
     height: 100vh;
+    position: relative;
 }
 
 p {

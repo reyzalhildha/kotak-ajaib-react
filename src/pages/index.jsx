@@ -1,46 +1,29 @@
 import LinearHero from "../assets/img/linear-hero.png";
-import Student from "../assets/img/student.png";
-import PeopleIcon from "../assets/img/icon/people.svg";
-import LockIcon from "../assets/img/icon/lock.svg";
-import EyeIcon from "../assets/img/icon/eye.svg";
+import StudentBoard from "../assets/img/student-board.svg";
+import BoxClick from "../assets/img/box-click.svg";
 
 function Index() {
-
     return (
         <>
             <section>
                 <div className="hero">
                     <img src={LinearHero} alt="hero" />
-                    <div className="student">
-                        <img src={Student} alt="student" />
-                    </div>
-                    <div className="form">
-                        <h3>Masuk Akun Anda</h3>
-                        <div className="email">
-                            <img className="left-icon" src={PeopleIcon} alt="people" />
-                            <input placeholder="Email atau nomor" />
-                        </div>
-                        <div className="password">
-                            <img className="left-icon" src={LockIcon} alt="lock" />
-                            <input placeholder="Kata sandi" />
-                            <img className="right-icon" src={EyeIcon} alt="lock" />
-                        </div>
+                </div>
 
-                        <div className="footer">
-                            <div className="flex justify-between">
-                                <div className="rememberMe">
-                                    <input type="checkbox" name="rememberme" /> <p>Ingatkan Saya</p>
-                                </div>
-                                <div className="forgot">
-                                    <p>Lupa sandi</p>
-                                </div>
-                            </div>
-                        </div>
+                <div className="student-board">
+                    <img src={StudentBoard} alt="Student Board" />
 
-                        <div className="submit">
-                            <button type="submit">Masuk untuk melanjutkan</button>
-                        </div>
+                    <div className="frame-board">
+                        <p className="text-board">
+                            Selamat datang di Pembelajaran Pendidikan Pancasila Materi “Menaati Peraturan Disekitarku”
+                        </p>
                     </div>
+                </div>
+
+                <div className="box-click">
+                    <a href="peraturan">
+                        <img src={BoxClick} alt="Open Box" />
+                    </a>
                 </div>
             </section>
         </>
