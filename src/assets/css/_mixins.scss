@@ -1,0 +1,35 @@
+/* =============================================
+SUPPORTS - MIXINS
+============================================= */
+
+@mixin vertically-centered() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @mixin horizontally-centered() {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  @mixin vertically-horizontally-centered() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  @mixin linear-gradient-overlay() {
+    background-image: linear-gradient(to bottom, rgba($global-black, 0), rgba($global-black, .12));
+  }
+  
+  @mixin standard-transition() {
+    transition: all .35s cubic-bezier(.25, .8, .25, 1);
+  }
+  
+  @mixin transform-input() {
+    transform: translate(5px, -15px);
+  }
+  

@@ -1,3 +1,5 @@
+@import "./mixins";
+
 .hero {
     margin: 0;
     width: 100%;
@@ -60,14 +62,117 @@
     }
 }
 
-.hero-peraturan {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    img {
+.container-peraturan {
+    .hero-peraturan {
+        position: absolute;
+        bottom: 0;
         width: 100%;
-        height: 450px;
+        z-index: -999;
+
+        img {
+            width: 100%;
+            height: 450px;
+        }
+    }
+
+    .container-header {
+        display: flex;
+        padding-top: 7em;
+        justify-content: center;
+
+        .header {
+            width: 50%;
+            display: grid;
+            text-align: center;
+
+            h1 {
+                color: #000000;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            p {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: "Montserrat", sans-serif;
+            }
+        }
+    }
+
+    .container-contoh {
+        gap: 5em;
+        display: flex;
+        justify-content: center;
+        padding: 7em 13em 0px 13em;
+
+        .card {
+            width: 300px;
+            gap: 1em;
+            display: grid;
+            text-align: center;
+            justify-items: center;
+            position: relative;
+
+            background: #ffdccc;
+            border-radius: 25px;
+
+            h1 {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            p {
+                color: #000000;
+                font-size: 13px;
+                font-weight: 600;
+                font-family: "Montserrat", sans-serif;
+
+                padding: 0 2em 2em 2em;
+            }
+
+            img {
+                height: 250px;
+                margin-top: -7em;
+                object-fit: contain;
+            }
+
+            .button {
+                width: 100%;
+                bottom: -16px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    gap: 7px;
+                    width: 50%;
+                    display: flex;
+                    color: #ffffff;
+                    padding: 5px 1em;
+                    border-radius: 8px;
+                    align-items: center;
+                    background: #226300;
+                    @include standard-transition();
+
+                    img {
+                        margin: 0;
+                        width: 15px;
+                        height: auto;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        gap: 10px;
+                        @include standard-transition();
+                    }
+                }
+            }
+        }
     }
 }
 
