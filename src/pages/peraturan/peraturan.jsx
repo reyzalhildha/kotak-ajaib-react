@@ -1,13 +1,15 @@
-import LinearBottom from "../assets/img/linear-bottom.svg";
-import PeraturanKeluarga from "../assets/img/peraturan-keluarga.svg";
-import PeraturanSekolah from "../assets/img/peraturan-sekolah.svg";
-import PeraturanMasyarakat from "../assets/img/peraturan-masyarakat.svg";
-import ChevronRight from "../assets/img/chevron-right.svg";
+import LinearBottom from "../../assets/img/linear-bottom.svg";
+import PeraturanKeluarga from "../../assets/img/peraturan-keluarga.svg";
+import PeraturanSekolah from "../../assets/img/peraturan-sekolah.svg";
+import PeraturanMasyarakat from "../../assets/img/peraturan-masyarakat.svg";
+import ChevronRight from "../../assets/img/chevron-right.svg";
+
+import Navbar from "../navbar";
 
 function Page() {
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             <section>
                 <div className="container-peraturan">
                     <div className="hero-peraturan">
@@ -38,7 +40,7 @@ function Page() {
                                 Aturan yang dibuat sangat bermanfaat. Semua menjadi berdisiplin dan bertanggung jawab.
                             </p>
                             <div className="button">
-                                <a href="#">
+                                <a href="/peraturan-keluarga">
                                     Lihat contoh
                                     <img src={ChevronRight} alt="chevron right"></img>
                                 </a>
@@ -55,7 +57,7 @@ function Page() {
                                 Aturan disekolah meliputi dalam berbicara, berpakaian dan berperilaku.
                             </p>
                             <div className="button">
-                                <a href="#">
+                                <a href="/peraturan-keluarga">
                                     Lihat contoh
                                     <img src={ChevronRight} alt="chevron right"></img>
                                 </a>
@@ -74,7 +76,7 @@ function Page() {
                                 Peraturan dilaksanakan demi ketertiban umum.
                             </p>
                             <div className="button">
-                                <a href="#">
+                                <a href="/peraturan-keluarga">
                                     Lihat contoh
                                     <img src={ChevronRight} alt="chevron right"></img>
                                 </a>

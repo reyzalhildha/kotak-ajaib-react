@@ -1,20 +1,20 @@
 import Box from "../assets/img/box.png";
 
-function Navbar() {
+const Navbar = () => {
     return (
-        <nav>
-            <ul className="navbar">
-                <li>
+        <nav className="navbar">
+            <div className="navbar-ul">
+                <div className="left-navbar">
                     <img src={Box} alt="" />
-                </li>
-                <li>Home</li>
-                <li>Panduan</li>
-                <li>
+                </div>
+                <div className="right-navbar">
+                    <a href="/">Home</a>
+                    <a href="/peraturan">Panduan</a>
                     <img src={Box} alt="" />
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav >
-    );
+    )
 }
 
 export default Navbar;

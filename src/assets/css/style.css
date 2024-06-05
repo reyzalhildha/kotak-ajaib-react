@@ -22,7 +22,8 @@ nav {
   top: 0;
   width: 100%;
   position: fixed;
-  padding: 1em 4em;
+  padding: 0 4em;
+  border: none;
 }
 
 input {
