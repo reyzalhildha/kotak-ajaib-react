@@ -1,15 +1,12 @@
 import Bg from "../../assets/img/bg-peraturan-keluarga.svg";
-import Bg1 from "../../assets/img/bg-peraturan-keluarga-1.svg";
-import Bg2 from "../../assets/img/bg-peraturan-keluarga-2.svg";
 import Navbar from "../navbar";
 
 function Page() {
-    const MenyapuRumah = require('../../assets/img/berangkat-sekolah.svg');
+    const MenyapuRumah = require('../../assets/img/menyapu-rumah.svg');
     const TempatTidur = require('../../assets/img/merapikan-tempat-tidur.svg');
     const BuangSampah = require('../../assets/img/buang-sampah.svg');
     const BerangkatSekolah = require('../../assets/img/berangkat-sekolah.svg');
     const TidakBertengkar = require('../../assets/img/tidak-bertengkar.svg');
-
 
     const rulesMap = [
         { title: "Menyapu Rumah", img: MenyapuRumah },
@@ -18,9 +15,6 @@ function Page() {
         { title: "Berpamitan saat berangkat ke sekolah", img: BerangkatSekolah },
         { title: "Tidak bertengkar sesama saudara", img: TidakBertengkar }
     ]
-
-    console.log("rules: " + rulesMap);
-
 
     return (
         <>
@@ -42,7 +36,24 @@ function Page() {
                                 Aturan yang dibuat sangat bermanfaat.
                                 Semua menjadi berdisiplin dan bertanggung jawab.
                             </p>
+                            <p>
+                            Aturan di rumah dibuat bersama oleh kepala keluarga dan anggota keluarga. 
+                            Pembuatan aturan harus diketahui bersama. Aturan di rumah adalah suatu cara 
+                            (ketentuan, patokan, petunjuk, perintah, dan larangan) yang telah dibuat dan 
+                            disepakati bersama.Aturan wajib taati oleh anggota keluarga di rumah. 
+                            Aturan sering disebut juga tata tertib. Aturan di rumah sangat bermanfaat bagi anggota keluarga. 
+                            Dengan adanya aturan, kehidupan keluarga di rumah teratur/tertib, aman, mudah, lancar, dan nyaman. 
+                            Aturan di rumah ada yang berlaku pada pagi, siang, sore, dan malam hari. 
+                            Setiap anggota keluarga mempunyai hak dan kewajiban masing-masing. 
+                            Hak dan kewajiban tersebut berupa kegiatan yang harus dijalankan sesuai aturan di rumah. 
+                            Aturan atau tata tertib setiap keluarga dapat berbeda-beda.
+                            </p>
                         </div>
+                    </div>
+
+                    <div className="container-button">
+                        <button type="button" className="btn1">Contoh 1</button>
+                        <button type="button" className="btn2">Contoh 2</button>
                     </div>
 
                     <div className="container-contoh">
@@ -50,7 +61,7 @@ function Page() {
                             return (
                                 <div key={index} className="card">
                                     <img src={rule.img.default} alt="peraturan keluarga" />
-                                    <h1>{index + 1}. {rule.title}</h1>
+                                    <h1>{rule.title}</h1>
                                 </div>
                             )
                         })}

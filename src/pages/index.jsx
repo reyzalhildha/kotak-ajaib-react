@@ -21,10 +21,9 @@ function Index() {
                 </div>
 
                 <div className="box-click">
-                    <div className="box"></div>
-                    {/* <a href="peraturan">
-                        <img src={BoxClick} alt="Open Box" />
-                    </a> */}
+                    <a href="peraturan">
+                        <div className="box"></div>
+                    </a>
                 </div>
             </section>
         </>

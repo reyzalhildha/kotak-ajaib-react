@@ -227,11 +227,11 @@
 
     .container-header {
         display: flex;
-        padding-top: 7em;
+        padding-top: 5em;
         justify-content: left;
 
         .header {
-            width: 50%;
+            width: 70%;
             display: grid;
             text-align: left;
             padding-left: 7em;
@@ -252,12 +252,42 @@
         }
     }
 
+    .container-button {
+        padding: 1em 7em;
+        display: flex;
+        width: 100%;
+
+        button {
+            border-radius: 25px;
+        }
+
+        .btn1 {
+            width: 15%;
+            background: #FF5A00;
+            padding-right: 5em;
+        }
+
+        .btn2 {
+            width: 10%;
+            margin-left: -6em;
+            background: #3D3D3D;
+            @include standard-transition();
+            
+            &:hover {
+                margin-left: -5.5em;
+                @include standard-transition();
+            }
+        }
+
+
+    }
+
     .container-contoh {
         gap: 5em;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 7em 0 0 0;
+        padding: 4em 0 0 0;
 
         .card {
             width: 300px;
@@ -290,8 +320,8 @@
             }
 
             h1 {
-                color: #ff3131;
-                font-size: 25px;
+                color: #100F0F;
+                font-size: 20px;
                 font-weight: 700;
                 font-family: "Montserrat", sans-serif;
 
