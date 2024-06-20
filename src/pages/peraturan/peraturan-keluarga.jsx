@@ -52,8 +52,8 @@ function Page() {
                     </div>
 
                     <div className="container-button">
-                        <button type="button" className="btn1">Contoh 1</button>
-                        <button type="button" className="btn2">Contoh 2</button>
+                        <a className="btn1" href="peraturan-keluarga">Contoh 1</a>
+                        <a className="btn2" href="peraturan-keluarga-contoh2">Contoh 2</a>
                     </div>
 
                     <div className="container-contoh">
