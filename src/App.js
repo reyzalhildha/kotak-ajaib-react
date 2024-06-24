@@ -7,6 +7,7 @@ import Peraturan from "./pages/peraturan/peraturan.jsx";
 import PeraturanKeluarga from "./pages/peraturan/peraturan-keluarga.jsx";
 import PeraturanKeluarga2 from "./pages/peraturan/peraturan-keluarga-contoh2.jsx";
 import PeraturanSekolah from "./pages/peraturan/peraturan-sekolah.jsx";
+import PeraturanMasyarakat from "./pages/peraturan/peraturan-masyarakat.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/peraturan-keluarga" element={<PeraturanKeluarga />} />
         <Route path="/peraturan-keluarga-contoh2" element={<PeraturanKeluarga2 />} />
         <Route path="/peraturan-sekolah" element={<PeraturanSekolah />} />
+        <Route path="/peraturan-masyarakat" element={<PeraturanMasyarakat />} />
       </Routes>
     </>
   );

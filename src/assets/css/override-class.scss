@@ -272,23 +272,21 @@
 
         .btn1 {
             width: 15%;
-            background: #3D3D3D;
+            background: #3d3d3d;
             padding-right: 5em;
         }
-        
+
         .btn2 {
             width: 10%;
             margin-left: -6em;
-            background: #FF5A00;
+            background: #ff5a00;
             @include standard-transition();
-            
+
             &:hover {
                 margin-left: -5.5em;
                 @include standard-transition();
             }
         }
-
-
     }
 
     .container-contoh {
@@ -329,7 +327,7 @@
             }
 
             h1 {
-                color: #100F0F;
+                color: #100f0f;
                 font-size: 20px;
                 font-weight: 700;
                 font-family: var(--montserrat);
@@ -398,7 +396,7 @@
                 font-weight: 700;
                 font-family: var(--montserrat);
             }
-            
+
             ul {
                 gap: 6px;
                 display: grid;
@@ -418,7 +416,7 @@
                 font-family: var(--montserrat);
 
                 &::before {
-                    content: '';
+                    content: "";
                     height: 100%;
                     display: inline-block;
                     background-position: center;
@@ -435,7 +433,6 @@
         width: 100%;
         padding-top: 7em;
 
-
         a {
             border-radius: 25px;
             display: flex;
@@ -448,22 +445,20 @@
         .btn1 {
             width: 15%;
             padding-right: 5em;
-            background: #3D3D3D;
+            background: #3d3d3d;
         }
-        
+
         .btn2 {
             width: 10%;
             margin-left: -6em;
-            background: #FF5A00;
+            background: #ff5a00;
             @include standard-transition();
-            
+
             &:hover {
                 margin-left: -5.5em;
                 @include standard-transition();
             }
         }
-
-
     }
 
     .container-contoh {
@@ -504,7 +499,7 @@
             }
 
             h1 {
-                color: #100F0F;
+                color: #100f0f;
                 font-size: 20px;
                 font-weight: 700;
                 font-family: var(--montserrat);
@@ -579,46 +574,11 @@
             }
 
             li {
-                color: #ED374D;
+                color: #ed374d;
                 font-weight: 600;
                 font-family: var(--montserrat);
             }
         }
-    }
-
-    .container-button {
-        padding: 1em 7em;
-        display: flex;
-        width: 100%;
-
-        a {
-            border-radius: 25px;
-            display: flex;
-            justify-content: center;
-            padding: 6px 0;
-            color: white;
-            font-family: var(--montserrat);
-        }
-
-        .btn1 {
-            width: 15%;
-            background: #3D3D3D;
-            padding-right: 5em;
-        }
-        
-        .btn2 {
-            width: 10%;
-            margin-left: -6em;
-            background: #FF5A00;
-            @include standard-transition();
-            
-            &:hover {
-                margin-left: -5.5em;
-                @include standard-transition();
-            }
-        }
-
-
     }
 
     .container-contoh {
@@ -659,7 +619,7 @@
             }
 
             h1 {
-                color: #100F0F;
+                color: #100f0f;
                 font-size: 18px;
                 font-weight: 700;
                 font-family: var(--montserrat);
@@ -692,15 +652,96 @@
                 display: grid;
                 margin-left: 0;
             }
-    
+
             li {
                 text-align: left;
                 list-style: disc;
-                color: #ED374D;
+                color: #ed374d;
                 font-size: 12px;
                 font-weight: 600;
                 font-family: var(--montserrat);
             }
+        }
+    }
+}
+
+.container-peraturan-masyarakat {
+    .hero-peraturan {
+        position: absolute;
+        z-index: -999;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -180px;
+        background-image: url(../img/hero-masyarakat.svg);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .container-header {
+        display: flex;
+        padding-top: 5em;
+        justify-content: left;
+
+        .header {
+            width: 70%;
+            display: grid;
+            text-align: left;
+            padding-left: 7em;
+
+            h1 {
+                color: #000000;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: var(--montserrat);
+            }
+
+            p {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: var(--montserrat);
+            }
+        }
+    }
+
+    .container-peraturan {
+        gap: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2em 7em;
+
+        h1 {
+            padding: 1em 0;
+            text-align: center;
+            color: #ed374d;
+            font-size: 22px;
+            font-weight: 700;
+            font-family: var(--montserrat);
+        }
+
+        ul {
+            gap: 0;
+            display: grid;
+            margin-left: 0;
+        }
+
+        li {
+            list-style: disc;
+            color: #000000;
+            font-weight: 600;
+            font-family: var(--montserrat);
+        }
+
+        .card {
+            padding: 1em 3em;
+            border-radius: 12px;
+            opacity: 0.9;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         }
     }
 }

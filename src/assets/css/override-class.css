@@ -239,13 +239,13 @@ SUPPORTS - MIXINS
 }
 .container-peraturan-keluarga .container-button .btn1 {
   width: 15%;
-  background: #3D3D3D;
+  background: #3d3d3d;
   padding-right: 5em;
 }
 .container-peraturan-keluarga .container-button .btn2 {
   width: 10%;
   margin-left: -6em;
-  background: #FF5A00;
+  background: #ff5a00;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .container-peraturan-keluarga .container-button .btn2:hover {
@@ -293,7 +293,7 @@ SUPPORTS - MIXINS
   }
 }
 .container-peraturan-keluarga .container-contoh .card h1 {
-  color: #100F0F;
+  color: #100f0f;
   font-size: 20px;
   font-weight: 700;
   font-family: var(--montserrat);
@@ -401,12 +401,12 @@ SUPPORTS - MIXINS
 .container-peraturan-keluarga-contoh2 .container-button .btn1 {
   width: 15%;
   padding-right: 5em;
-  background: #3D3D3D;
+  background: #3d3d3d;
 }
 .container-peraturan-keluarga-contoh2 .container-button .btn2 {
   width: 10%;
   margin-left: -6em;
-  background: #FF5A00;
+  background: #ff5a00;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .container-peraturan-keluarga-contoh2 .container-button .btn2:hover {
@@ -454,7 +454,7 @@ SUPPORTS - MIXINS
   }
 }
 .container-peraturan-keluarga-contoh2 .container-contoh .card h1 {
-  color: #100F0F;
+  color: #100f0f;
   font-size: 20px;
   font-weight: 700;
   font-family: var(--montserrat);
@@ -524,37 +524,9 @@ SUPPORTS - MIXINS
   margin-left: 0;
 }
 .container-peraturan-sekolah .container-header .header li {
-  color: #ED374D;
+  color: #ed374d;
   font-weight: 600;
   font-family: var(--montserrat);
-}
-.container-peraturan-sekolah .container-button {
-  padding: 1em 7em;
-  display: flex;
-  width: 100%;
-}
-.container-peraturan-sekolah .container-button a {
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  padding: 6px 0;
-  color: white;
-  font-family: var(--montserrat);
-}
-.container-peraturan-sekolah .container-button .btn1 {
-  width: 15%;
-  background: #3D3D3D;
-  padding-right: 5em;
-}
-.container-peraturan-sekolah .container-button .btn2 {
-  width: 10%;
-  margin-left: -6em;
-  background: #FF5A00;
-  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.container-peraturan-sekolah .container-button .btn2:hover {
-  margin-left: -5.5em;
-  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .container-peraturan-sekolah .container-contoh {
   gap: 5em;
@@ -597,7 +569,7 @@ SUPPORTS - MIXINS
   }
 }
 .container-peraturan-sekolah .container-contoh .card h1 {
-  color: #100F0F;
+  color: #100f0f;
   font-size: 18px;
   font-weight: 700;
   font-family: var(--montserrat);
@@ -636,10 +608,79 @@ SUPPORTS - MIXINS
 .container-peraturan-sekolah .container-contoh .card li {
   text-align: left;
   list-style: disc;
-  color: #ED374D;
+  color: #ed374d;
   font-size: 12px;
   font-weight: 600;
   font-family: var(--montserrat);
+}
+
+.container-peraturan-masyarakat .hero-peraturan {
+  position: absolute;
+  z-index: -999;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -180px;
+  background-image: url(../img/hero-masyarakat.svg);
+}
+.container-peraturan-masyarakat .hero-peraturan img {
+  width: 100%;
+}
+.container-peraturan-masyarakat .container-header {
+  display: flex;
+  padding-top: 5em;
+  justify-content: left;
+}
+.container-peraturan-masyarakat .container-header .header {
+  width: 70%;
+  display: grid;
+  text-align: left;
+  padding-left: 7em;
+}
+.container-peraturan-masyarakat .container-header .header h1 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+.container-peraturan-masyarakat .container-header .header p {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--montserrat);
+}
+.container-peraturan-masyarakat .container-peraturan {
+  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2em 7em;
+}
+.container-peraturan-masyarakat .container-peraturan h1 {
+  padding: 1em 0;
+  text-align: center;
+  color: #ed374d;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+.container-peraturan-masyarakat .container-peraturan ul {
+  gap: 0;
+  display: grid;
+  margin-left: 0;
+}
+.container-peraturan-masyarakat .container-peraturan li {
+  list-style: disc;
+  color: #000000;
+  font-weight: 600;
+  font-family: var(--montserrat);
+}
+.container-peraturan-masyarakat .container-peraturan .card {
+  padding: 1em 3em;
+  border-radius: 12px;
+  opacity: 0.9;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .navbar {
