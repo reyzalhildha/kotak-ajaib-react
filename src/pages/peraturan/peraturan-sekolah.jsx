@@ -9,31 +9,41 @@ function Page() {
     const Img5 = require('../../assets/img/tugas-ujian.svg');
 
     const rulesMap = [
-        { title: "Kehadiran dan Ketepatan Waktu", img: Img1, 
+        {
+            title: "Kehadiran dan Ketepatan Waktu", img: Img1,
             list: <ul>
-                    <li>Siswa diharapkan hadir tepat waktu setiap hari.</li>
-                    <li>Ketidakhadiran harus diberitahukan dengan alasan yang valid, seperti sakit atau urusan keluarga mendesak.</li>
-                  </ul>},
-        { title: "Seragam sekolah", img: Img2, 
+                <li>Siswa diharapkan hadir tepat waktu setiap hari.</li>
+                <li>Ketidakhadiran harus diberitahukan dengan alasan yang valid, seperti sakit atau urusan keluarga mendesak.</li>
+            </ul>
+        },
+        {
+            title: "Seragam sekolah", img: Img2,
             list: <ul>
-                    <li>Siswa harus mengenakan seragam sesuai dengan ketentuan sekolah</li>
-                    <li>Seragam harus bersih dan rapi</li>
-                  </ul>},
-        { title: "Sikap & Perilaku", img: Img3, 
+                <li>Siswa harus mengenakan seragam sesuai dengan ketentuan sekolah</li>
+                <li>Seragam harus bersih dan rapi</li>
+            </ul>
+        },
+        {
+            title: "Sikap & Perilaku", img: Img3,
             list: <ul>
-                    <li>Siswa diharapkan menghormati guru, staf, dan teman-teman</li>
-                    <li>Perilaku bullying, kekerasan, dan pelecehan tidak ditoleransi</li>
-                  </ul>},
-        { title: "Kebersihan & Kerapian", img: Img4, 
+                <li>Siswa diharapkan menghormati guru, staf, dan teman-teman</li>
+                <li>Perilaku bullying, kekerasan, dan pelecehan tidak ditoleransi</li>
+            </ul>
+        },
+        {
+            title: "Kebersihan & Kerapian", img: Img4,
             list: <ul>
-                    <li>Siswa harus menjaga kebersihan kelas dan lingkungan sekolah</li>
-                    <li>Sampah harus dibuang pada tempatnya</li>
-                  </ul>},  
-        { title: "Tugas & Ujian", img: Img5, 
+                <li>Siswa harus menjaga kebersihan kelas dan lingkungan sekolah</li>
+                <li>Sampah harus dibuang pada tempatnya</li>
+            </ul>
+        },
+        {
+            title: "Tugas & Ujian", img: Img5,
             list: <ul>
-                    <li>Siswa harus menyelesaikan tugas dan mengikuti ujian sesuai jadwal</li>
-                    <li>Siswa tidak diperbolehkan untuk menyontek</li>
-                  </ul>},
+                <li>Siswa harus menyelesaikan tugas dan mengikuti ujian sesuai jadwal</li>
+                <li>Siswa tidak diperbolehkan untuk menyontek</li>
+            </ul>
+        },
     ]
 
     return (

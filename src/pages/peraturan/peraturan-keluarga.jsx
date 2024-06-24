@@ -37,16 +37,16 @@ function Page() {
                                 Semua menjadi berdisiplin dan bertanggung jawab.
                             </p>
                             <p>
-                            Aturan di rumah dibuat bersama oleh kepala keluarga dan anggota keluarga. 
-                            Pembuatan aturan harus diketahui bersama. Aturan di rumah adalah suatu cara 
-                            (ketentuan, patokan, petunjuk, perintah, dan larangan) yang telah dibuat dan 
-                            disepakati bersama.Aturan wajib taati oleh anggota keluarga di rumah. 
-                            Aturan sering disebut juga tata tertib. Aturan di rumah sangat bermanfaat bagi anggota keluarga. 
-                            Dengan adanya aturan, kehidupan keluarga di rumah teratur/tertib, aman, mudah, lancar, dan nyaman. 
-                            Aturan di rumah ada yang berlaku pada pagi, siang, sore, dan malam hari. 
-                            Setiap anggota keluarga mempunyai hak dan kewajiban masing-masing. 
-                            Hak dan kewajiban tersebut berupa kegiatan yang harus dijalankan sesuai aturan di rumah. 
-                            Aturan atau tata tertib setiap keluarga dapat berbeda-beda.
+                                Aturan di rumah dibuat bersama oleh kepala keluarga dan anggota keluarga.
+                                Pembuatan aturan harus diketahui bersama. Aturan di rumah adalah suatu cara
+                                (ketentuan, patokan, petunjuk, perintah, dan larangan) yang telah dibuat dan
+                                disepakati bersama.Aturan wajib taati oleh anggota keluarga di rumah.
+                                Aturan sering disebut juga tata tertib. Aturan di rumah sangat bermanfaat bagi anggota keluarga.
+                                Dengan adanya aturan, kehidupan keluarga di rumah teratur/tertib, aman, mudah, lancar, dan nyaman.
+                                Aturan di rumah ada yang berlaku pada pagi, siang, sore, dan malam hari.
+                                Setiap anggota keluarga mempunyai hak dan kewajiban masing-masing.
+                                Hak dan kewajiban tersebut berupa kegiatan yang harus dijalankan sesuai aturan di rumah.
+                                Aturan atau tata tertib setiap keluarga dapat berbeda-beda.
                             </p>
                         </div>
                     </div>
