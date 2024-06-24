@@ -486,6 +486,162 @@ SUPPORTS - MIXINS
   }
 }
 
+.container-peraturan-sekolah .hero-peraturan {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -999;
+}
+.container-peraturan-sekolah .hero-peraturan img {
+  width: 100%;
+}
+.container-peraturan-sekolah .container-header {
+  display: flex;
+  padding-top: 5em;
+  justify-content: left;
+}
+.container-peraturan-sekolah .container-header .header {
+  width: 70%;
+  display: grid;
+  text-align: left;
+  padding-left: 7em;
+}
+.container-peraturan-sekolah .container-header .header h1 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+.container-peraturan-sekolah .container-header .header p {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--montserrat);
+}
+.container-peraturan-sekolah .container-header .header ul {
+  gap: 0;
+  display: grid;
+  margin-left: 0;
+}
+.container-peraturan-sekolah .container-header .header li {
+  color: #ED374D;
+  font-weight: 600;
+  font-family: var(--montserrat);
+}
+.container-peraturan-sekolah .container-button {
+  padding: 1em 7em;
+  display: flex;
+  width: 100%;
+}
+.container-peraturan-sekolah .container-button a {
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 6px 0;
+  color: white;
+  font-family: var(--montserrat);
+}
+.container-peraturan-sekolah .container-button .btn1 {
+  width: 15%;
+  background: #3D3D3D;
+  padding-right: 5em;
+}
+.container-peraturan-sekolah .container-button .btn2 {
+  width: 10%;
+  margin-left: -6em;
+  background: #FF5A00;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.container-peraturan-sekolah .container-button .btn2:hover {
+  margin-left: -5.5em;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.container-peraturan-sekolah .container-contoh {
+  gap: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4em 0 0 0;
+}
+.container-peraturan-sekolah .container-contoh .card {
+  width: 300px;
+  height: auto;
+  padding: 2em;
+  gap: 1em;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  position: relative;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 3px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 2000px) {
+  .container-peraturan-sekolah .container-contoh .card {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .container-peraturan-sekolah .container-contoh .card {
+    width: 245px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .container-peraturan-sekolah .container-contoh .card {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container-peraturan-sekolah .container-contoh .card {
+    width: 120px;
+  }
+}
+.container-peraturan-sekolah .container-contoh .card h1 {
+  color: #100F0F;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+@media screen and (max-width: 1600px) {
+  .container-peraturan-sekolah .container-contoh .card h1 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container-peraturan-sekolah .container-contoh .card h1 {
+    font-size: 10px;
+  }
+}
+.container-peraturan-sekolah .container-contoh .card img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1600px) {
+  .container-peraturan-sekolah .container-contoh .card img {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container-peraturan-sekolah .container-contoh .card img {
+    height: 50px;
+  }
+}
+.container-peraturan-sekolah .container-contoh .card ul {
+  gap: 0;
+  display: grid;
+  margin-left: 0;
+}
+.container-peraturan-sekolah .container-contoh .card li {
+  text-align: left;
+  list-style: disc;
+  color: #ED374D;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--montserrat);
+}
+
 .navbar {
   border: none;
   z-index: 999;

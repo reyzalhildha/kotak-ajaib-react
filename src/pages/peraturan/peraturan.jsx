@@ -57,7 +57,7 @@ function Page() {
                                 Aturan disekolah meliputi dalam berbicara, berpakaian dan berperilaku.
                             </p>
                             <div className="button">
-                                <a href="/peraturan-keluarga">
+                                <a href="/peraturan-sekolah">
                                     Lihat contoh
                                     <img src={ChevronRight} alt="chevron right"></img>
                                 </a>
@@ -76,7 +76,7 @@ function Page() {
                                 Peraturan dilaksanakan demi ketertiban umum.
                             </p>
                             <div className="button">
-                                <a href="/peraturan-keluarga">
+                                <a href="/peraturan-masyarakat">
                                     Lihat contoh
                                     <img src={ChevronRight} alt="chevron right"></img>
                                 </a>
