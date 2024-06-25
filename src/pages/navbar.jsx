@@ -9,7 +9,7 @@ const Navbar = () => {
                 </div>
                 <div className="right-navbar">
                     <a href="/">Home</a>
-                    <a href="/peraturan">Kotak Ajaib!</a>
+                    <a href="/kotak-ajaib">Kotak Ajaib!</a>
                     <img src={Box} alt="" />
                 </div>
             </div>

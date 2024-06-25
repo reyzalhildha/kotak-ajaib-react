@@ -32,7 +32,7 @@ function Page() {
                                     </li>
                                     <li>
                                         Mengatur Interaksi  Sosial: Aturan membantu mengatur interaksi antarwarga,
-                                        memastikan bahwa semua orang saling menghormati dan memperlakukan satu sama lain  dengan adil.elah
+                                        memastikan bahwa semua orang saling menghormati dan memperlakukan satu sama lain  dengan adil.
                                     </li>
                                     <li>
                                         Melindungi Kepentingan Bersama: Aturan membantu melindungi kepentingan bersama,
