@@ -2,6 +2,7 @@
 
 :root {
     --montserrat: "Montserrat", sans-serif;
+    --text-red: #ed374d;
 }
 
 .hero {
@@ -763,8 +764,9 @@
     }
 
     .container-body {
-        position: absolute;
         top: 5em;
+        width: 100%;
+        position: absolute;
 
         h1 {
             color: #ffffff;
@@ -802,6 +804,7 @@
         }
 
         .title {
+            text-align: center;
             p {
                 color: #000000;
                 font-size: 20px;
@@ -816,10 +819,18 @@
             padding: 1em 0;
 
             a {
-                background: #000000;
                 padding: 10px 4em;
                 color: #ffffff;
                 border-radius: 12px;
+                background: #000000;
+                @include standard-transition();
+
+                &:hover {
+                    color: #FFFFFF;
+                    scale: 1.02;
+                    cursor: pointer;
+                    @include standard-transition();
+                }
             }
         }
     }

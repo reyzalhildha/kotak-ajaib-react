@@ -3,6 +3,7 @@ SUPPORTS - MIXINS
 ============================================= */
 :root {
   --montserrat: "Montserrat", sans-serif;
+  --text-red: #ed374d;
 }
 
 .hero {
@@ -698,8 +699,9 @@ SUPPORTS - MIXINS
   background-image: url(../img/hero-masyarakat.svg);
 }
 .container-kotak-ajaib .container-body {
-  position: absolute;
   top: 5em;
+  width: 100%;
+  position: absolute;
 }
 .container-kotak-ajaib .container-body h1 {
   color: #ffffff;
@@ -730,6 +732,9 @@ SUPPORTS - MIXINS
   -o-object-fit: contain;
      object-fit: contain;
 }
+.container-kotak-ajaib .container-body .title {
+  text-align: center;
+}
 .container-kotak-ajaib .container-body .title p {
   color: #000000;
   font-size: 20px;
@@ -742,10 +747,17 @@ SUPPORTS - MIXINS
   padding: 1em 0;
 }
 .container-kotak-ajaib .container-body .button a {
-  background: #000000;
   padding: 10px 4em;
   color: #ffffff;
   border-radius: 12px;
+  background: #000000;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.container-kotak-ajaib .container-body .button a:hover {
+  color: #FFFFFF;
+  scale: 1.02;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .navbar {

@@ -3,6 +3,8 @@ import Lkpd from "../assets/img/lkpd.svg";
 import QuestionPancasila from "../assets/img/question-pancasila.svg";
 import Games from "../assets/img/games.svg";
 import Youtube from "../assets/img/youtube.svg";
+import Pdf from "../assets/file/LKPD PENDIDIKAN PANCASILA.pdf";
+import Pertanyaan from "../assets/file/Pertanyaan Pendidikan pancasila 20 soal.docx";
 
 import Navbar from "./navbar";
 
@@ -27,7 +29,7 @@ function Page() {
                                         <p>LKPD Pendidikan Pancasila</p>
                                     </div>
                                     <div className="button">
-                                        <a>Download</a>
+                                        <a href={Pdf} target="_self">Download</a>
                                     </div>
                                 </div>
 
@@ -39,7 +41,7 @@ function Page() {
                                         <p>Pertanyaan Pendidikan Pancasila</p>
                                     </div>
                                     <div className="button">
-                                        <a>Download</a>
+                                        <a href={Pertanyaan} target="_self">Download</a>
                                     </div>
                                 </div>
 
@@ -51,7 +53,7 @@ function Page() {
                                         <p>Games</p>
                                     </div>
                                     <div className="button">
-                                        <a>Download</a>
+                                        <a href="https://wordwall.net/play/74473/644/898" target="_self">Download</a>
                                     </div>
                                 </div>
 
@@ -63,7 +65,7 @@ function Page() {
                                         <p>Video Belajar</p>
                                     </div>
                                     <div className="button">
-                                        <a>Download</a>
+                                        <a href="https://youtu.be/X6y2XS0Z8co?si=ajH7mX4eEVs27JKh" target="_self">Download</a>
                                     </div>
                                 </div>
 
