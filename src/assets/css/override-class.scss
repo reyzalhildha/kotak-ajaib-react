@@ -74,15 +74,15 @@
     top: 10em;
 
     @media screen and (max-width: 1600px) {
-        // width: 400px;
         width: 25%;
         right: 20em;
     }
 
     img {
-        &:hover {
-            cursor: pointer;
-        }
+        position: absolute;
+        width: 150px;
+        top: 6em;
+        left: -7em;
     }
 
     .box {
@@ -90,27 +90,23 @@
         background-image: url("../img/box-click.svg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 150%;
         height: 400px;
+        @include standard-transition();
 
         &:hover {
             cursor: pointer;
-            background-image: url("../img/berangkat-sekolah.svg");
+            background-size: 120%;
+            background-image: url("../img/box-click-open.svg");
+            @include standard-transition();
         }
     }
 }
 
 .container-peraturan {
     .hero-peraturan {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        z-index: -999;
-
-        img {
-            width: 100%;
-            // height: 450px;
-        }
+        background-image: url("../img/bg-peraturan.svg");
+        @include background-image();
     }
 
     .container-header {
@@ -220,7 +216,7 @@
 
 .container-peraturan-keluarga {
     .hero-peraturan {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         width: 100%;
         z-index: -999;
@@ -361,16 +357,8 @@
 
 .container-peraturan-keluarga-contoh2 {
     .hero-peraturan {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        z-index: -999;
-        display: flex;
-        justify-content: right;
-
-        img {
-            width: 50%;
-        }
+        background-image: url(../img/bg-peraturan-keluarga-2.svg);
+        @include background-image();
     }
 
     .home-people {
@@ -668,18 +656,8 @@
 
 .container-peraturan-masyarakat {
     .hero-peraturan {
-        position: absolute;
-        z-index: -999;
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: -180px;
         background-image: url(../img/hero-masyarakat.svg);
-
-        img {
-            width: 100%;
-        }
+        @include background-image();
     }
 
     .container-header {
@@ -753,14 +731,8 @@
     height: 100vh;
 
     .hero-kotak-ajaib {
-        position: absolute;
-        z-index: -999;
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        // background-position-y: -300px;
-        background-image: url(../img/hero-masyarakat.svg);
+        background-image: url(../img/bg-kotak-ajaib.svg);
+        @include background-image();
     }
 
     .container-body {
@@ -826,7 +798,7 @@
                 @include standard-transition();
 
                 &:hover {
-                    color: #FFFFFF;
+                    color: #ffffff;
                     scale: 1.02;
                     cursor: pointer;
                     @include standard-transition();
@@ -870,10 +842,33 @@
             width: 50px;
         }
 
+        .left-navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: #161c2d;
+                font-size: 19px;
+                font-weight: 700;
+                font-family: var(--montserrat);
+                @include standard-transition();
+
+                &:hover {
+                    border: none;
+                    
+                }
+            }
+        }
+
         .right-navbar {
             gap: 2em;
             display: flex;
             align-items: center;
+
+            img {
+                width: 30px;
+            }
         }
     }
 }

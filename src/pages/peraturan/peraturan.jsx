@@ -1,4 +1,3 @@
-import LinearBottom from "../../assets/img/linear-bottom.svg";
 import PeraturanKeluarga from "../../assets/img/peraturan-keluarga.svg";
 import PeraturanSekolah from "../../assets/img/peraturan-sekolah.svg";
 import PeraturanMasyarakat from "../../assets/img/peraturan-masyarakat.svg";
@@ -12,9 +11,7 @@ function Page() {
             <Navbar />
             <section>
                 <div className="container-peraturan">
-                    <div className="hero-peraturan">
-                        <img src={LinearBottom} alt="hero peraturan" />
-                    </div>
+                    <div className="hero-peraturan"></div>
 
                     <div className="container-header">
                         <div className="header">

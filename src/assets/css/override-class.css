@@ -79,30 +79,43 @@ SUPPORTS - MIXINS
     right: 20em;
   }
 }
-.box-click img:hover {
-  cursor: pointer;
+.box-click img {
+  position: absolute;
+  width: 150px;
+  top: 6em;
+  left: -7em;
 }
 .box-click .box {
   width: 300px;
   background-image: url("../img/box-click.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
   height: 400px;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .box-click .box:hover {
   cursor: pointer;
-  background-image: url("../img/berangkat-sekolah.svg");
+  background-size: 120%;
+  background-image: url("../img/box-click-open.svg");
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .container-peraturan .hero-peraturan {
-  position: absolute;
-  bottom: 0;
+  background-image: url("../img/bg-peraturan.svg");
+  top: 0;
   width: 100%;
+  height: 100vh;
   z-index: -999;
-}
-.container-peraturan .hero-peraturan img {
-  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 .container-peraturan .container-header {
   display: flex;
@@ -194,7 +207,7 @@ SUPPORTS - MIXINS
 }
 
 .container-peraturan-keluarga .hero-peraturan {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   z-index: -999;
@@ -327,15 +340,20 @@ SUPPORTS - MIXINS
 }
 
 .container-peraturan-keluarga-contoh2 .hero-peraturan {
-  position: absolute;
-  bottom: 0;
+  background-image: url(../img/bg-peraturan-keluarga-2.svg);
+  top: 0;
   width: 100%;
+  height: 100vh;
   z-index: -999;
-  display: flex;
-  justify-content: right;
-}
-.container-peraturan-keluarga-contoh2 .hero-peraturan img {
-  width: 50%;
+  overflow: hidden;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 .container-peraturan-keluarga-contoh2 .home-people {
   position: absolute;
@@ -616,17 +634,20 @@ SUPPORTS - MIXINS
 }
 
 .container-peraturan-masyarakat .hero-peraturan {
-  position: absolute;
-  z-index: -999;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -180px;
   background-image: url(../img/hero-masyarakat.svg);
-}
-.container-peraturan-masyarakat .hero-peraturan img {
+  top: 0;
   width: 100%;
+  height: 100vh;
+  z-index: -999;
+  overflow: hidden;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 .container-peraturan-masyarakat .container-header {
   display: flex;
@@ -690,13 +711,20 @@ SUPPORTS - MIXINS
   height: 100vh;
 }
 .container-kotak-ajaib .hero-kotak-ajaib {
-  position: absolute;
-  z-index: -999;
-  width: 100vw;
+  background-image: url(../img/bg-kotak-ajaib.svg);
+  top: 0;
+  width: 100%;
   height: 100vh;
-  background-size: cover;
+  z-index: -999;
+  overflow: hidden;
+  position: fixed;
   background-repeat: no-repeat;
-  background-image: url(../img/hero-masyarakat.svg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 .container-kotak-ajaib .container-body {
   top: 5em;
@@ -754,7 +782,7 @@ SUPPORTS - MIXINS
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .container-kotak-ajaib .container-body .button a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   scale: 1.02;
   cursor: pointer;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -790,8 +818,26 @@ SUPPORTS - MIXINS
 .navbar .navbar-ul img {
   width: 50px;
 }
+.navbar .navbar-ul .left-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-ul .left-navbar a {
+  color: #161c2d;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.navbar .navbar-ul .left-navbar a:hover {
+  border: none;
+}
 .navbar .navbar-ul .right-navbar {
   gap: 2em;
   display: flex;
   align-items: center;
+}
+.navbar .navbar-ul .right-navbar img {
+  width: 30px;
 }/*# sourceMappingURL=override-class.css.map */

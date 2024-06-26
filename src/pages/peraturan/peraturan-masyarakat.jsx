@@ -1,4 +1,3 @@
-import Bg from "../../assets/img/hero-masyarakat.svg";
 import Navbar from "../navbar";
 
 function Page() {
@@ -7,9 +6,7 @@ function Page() {
             <Navbar />
             <section>
                 <div className="container-peraturan-masyarakat">
-                    <div className="hero-peraturan">
-                        {/* <img src={Bg} alt="hero peraturan" /> */}
-                    </div>
+                    <div className="hero-peraturan"></div>
 
                     <div className="container-header">
                         <div className="header">

@@ -1,5 +1,3 @@
-import Bg from "../../assets/img/home-hero.svg";
-import People from "../../assets/img/home-people-hero.svg";
 import Navbar from "../navbar";
 
 function Page() {
@@ -8,12 +6,7 @@ function Page() {
             <Navbar />
             <section>
                 <div className="container-peraturan-keluarga-contoh2">
-                    <div className="hero-peraturan">
-                        <img src={Bg} alt="hero peraturan" />
-                        <div className="home-people">
-                            <img src={People} alt="people" />
-                        </div>
-                    </div>
+                    <div className="hero-peraturan"></div>
 
                     <div className="container-button">
                         <a className="btn1" href="peraturan-keluarga-contoh2">Contoh 2</a>

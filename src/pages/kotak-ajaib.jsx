@@ -1,4 +1,3 @@
-import LinearBottom from "../assets/img/linear-bottom.svg";
 import Lkpd from "../assets/img/lkpd.svg";
 import QuestionPancasila from "../assets/img/question-pancasila.svg";
 import Games from "../assets/img/games.svg";
@@ -29,7 +28,7 @@ function Page() {
                                         <p>LKPD Pendidikan Pancasila</p>
                                     </div>
                                     <div className="button">
-                                        <a href={Pdf} target="_self">Download</a>
+                                        <a href={Pdf} target="_self">Open</a>
                                     </div>
                                 </div>
 
@@ -41,7 +40,7 @@ function Page() {
                                         <p>Pertanyaan Pendidikan Pancasila</p>
                                     </div>
                                     <div className="button">
-                                        <a href={Pertanyaan} target="_self">Download</a>
+                                        <a href={Pertanyaan} target="_self">Open</a>
                                     </div>
                                 </div>
 
@@ -53,7 +52,7 @@ function Page() {
                                         <p>Games</p>
                                     </div>
                                     <div className="button">
-                                        <a href="https://wordwall.net/play/74473/644/898" target="_self">Download</a>
+                                        <a href="https://wordwall.net/play/74473/644/898" target="_self">Open</a>
                                     </div>
                                 </div>
 
@@ -65,7 +64,7 @@ function Page() {
                                         <p>Video Belajar</p>
                                     </div>
                                     <div className="button">
-                                        <a href="https://youtu.be/X6y2XS0Z8co?si=ajH7mX4eEVs27JKh" target="_self">Download</a>
+                                        <a href="https://youtu.be/X6y2XS0Z8co?si=ajH7mX4eEVs27JKh" target="_self">Open</a>
                                     </div>
                                 </div>
 

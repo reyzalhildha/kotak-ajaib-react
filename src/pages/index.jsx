@@ -1,6 +1,6 @@
 import LinearHero from "../assets/img/linear-hero.png";
 import StudentBoard from "../assets/img/student-board.svg";
-import BoxClick from "../assets/img/box-click.svg";
+import ClickHere from "../assets/img/click-here.svg";
 
 function Index() {
     return (
@@ -21,6 +21,7 @@ function Index() {
                 </div>
 
                 <div className="box-click">
+                    <img src={ClickHere} alt="click here"></img>
                     <a href="peraturan">
                         <div className="box"></div>
                     </a>
