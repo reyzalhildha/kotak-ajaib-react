@@ -732,6 +732,7 @@ SUPPORTS - MIXINS
   position: absolute;
 }
 .container-kotak-ajaib .container-body h1 {
+  text-align: center;
   color: #ffffff;
   font-size: 100px;
   font-weight: 700;
@@ -744,11 +745,29 @@ SUPPORTS - MIXINS
 }
 .container-kotak-ajaib .container-body .container-card {
   gap: 1em;
-  display: flex;
-  padding: 0 2em;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 4em 2em 0 2em;
+}
+@media screen and (min-width: 1250px) {
+  .container-kotak-ajaib .container-body .container-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container-kotak-ajaib .container-body .container-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 620px) {
+  .container-kotak-ajaib .container-body .container-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .container-kotak-ajaib .container-body .card {
   gap: 1em;
+  width: 350px;
   display: grid;
   padding: 0 2em;
   border-radius: 5px;
@@ -772,6 +791,7 @@ SUPPORTS - MIXINS
 .container-kotak-ajaib .container-body .button {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1em 0;
 }
 .container-kotak-ajaib .container-body .button a {

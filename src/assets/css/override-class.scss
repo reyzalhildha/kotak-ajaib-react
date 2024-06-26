@@ -741,6 +741,7 @@
         position: absolute;
 
         h1 {
+            text-align: center;
             color: #ffffff;
             font-size: 100px;
             font-weight: 700;
@@ -755,12 +756,27 @@
 
         .container-card {
             gap: 1em;
-            display: flex;
-            padding: 0 2em;
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            padding: 4em 2em 0 2em;
+            
+            @media screen and (min-width: 1250px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            @media screen and (max-width: 1250px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            @media screen and (max-width: 620px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
 
         .card {
             gap: 1em;
+            width: 350px;
             display: grid;
             padding: 0 2em;
             border-radius: 5px;
@@ -788,6 +804,7 @@
         .button {
             display: flex;
             justify-content: center;
+            align-items: center;
             padding: 1em 0;
 
             a {
@@ -856,7 +873,7 @@
 
                 &:hover {
                     border: none;
-                    
+
                 }
             }
         }
