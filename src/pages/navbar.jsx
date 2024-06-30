@@ -1,7 +1,8 @@
+import { useState } from "react";
 import Box from "../assets/img/box.png";
 import Profile from "../assets/img/profile.svg";
 
-const Navbar = () => {
+const Navbar = () => {  
     return (
         <nav className="navbar">
             <div className="navbar-ul">
@@ -12,7 +13,7 @@ const Navbar = () => {
                 <div className="right-navbar">
                     <a href="/">Home</a>
                     <a href="/peraturan">Peraturan</a>
-                    <a href="/kotak-ajaib" style={{marginRight: "4em"}}>Kotak Ajaib!</a>
+                    <a href="/kotak-ajaib" style={{ marginRight: "4em" }}>Kotak Ajaib!</a>
                     <img src={Profile} alt="Profile" />
                 </div>
             </div>

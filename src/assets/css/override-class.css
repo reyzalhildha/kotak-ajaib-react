@@ -4,20 +4,26 @@ SUPPORTS - MIXINS
 :root {
   --montserrat: "Montserrat", sans-serif;
   --text-red: #ed374d;
+  --resolusi-mobile: 768px;
+  --resolusi-laptop: 1024px;
+  --resolusi-desktop: 1440px;
 }
 
 .hero {
-  margin: 0;
+  background-image: url("../img/linear-hero.png");
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  z-index: -999;
   overflow: hidden;
-  position: relative;
-}
-.hero img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .student {
@@ -31,61 +37,102 @@ SUPPORTS - MIXINS
      object-fit: contain;
 }
 
-.student-board {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.container-index {
+  position: relative;
+  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.student-board img {
+@media screen and (max-width: 768px) {
+  .container-index {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.container-index .container-board {
+  position: relative;
+}
+.container-index .container-board .student-board {
+  position: relative;
+  display: grid;
+  align-items: end;
+}
+.container-index .container-board .student-board img {
+  width: 80%;
+}
+.container-index .container-board .student-board .frame-board {
+  position: absolute;
+  height: 100%;
   width: 100%;
+  padding: 13em 18em 14em 11em;
 }
-@media screen and (max-width: 1600px) {
-  .student-board img {
-    width: 80%;
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-index .container-board .student-board .frame-board {
+    padding: 7em 10em 9em 6em;
   }
 }
-.student-board .frame-board {
-  position: absolute;
-  top: 14em;
-  left: 11em;
-  width: 450px;
-}
-@media screen and (max-width: 1600px) {
-  .student-board .frame-board {
-    width: 350px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-index .container-board .student-board .frame-board {
+    padding: 7em 10em 9em 6em;
   }
 }
-.student-board .frame-board p {
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container-index .container-board .student-board .frame-board {
+    padding: 10em 14em 13em 9em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-index .container-board .student-board .frame-board {
+    padding: 5.5em 7em 8em 5em;
+  }
+}
+.container-index .container-board .student-board .frame-board p {
   color: #ffffff;
   font-size: 25px;
   font-weight: 600;
   font-family: var(--montserrat);
 }
-@media screen and (max-width: 1600px) {
-  .student-board .frame-board p {
-    font-size: 20px;
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-index .container-board .student-board .frame-board p {
+    font-size: 16px;
   }
 }
-
-.box-click {
-  position: absolute;
-  width: 25%;
-  right: 26em;
-  top: 10em;
-}
-@media screen and (max-width: 1600px) {
-  .box-click {
-    width: 25%;
-    right: 20em;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-index .container-board .student-board .frame-board p {
+    font-size: 8px;
   }
 }
-.box-click img {
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container-index .container-board .student-board .frame-board p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-index .container-board .student-board .frame-board p {
+    font-size: 12px;
+  }
+}
+.container-index .container-box {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.container-index .container-box .box-click {
+  position: relative;
+}
+.container-index .container-box .box-click img {
   position: absolute;
   width: 150px;
   top: 6em;
   left: -7em;
 }
-.box-click .box {
+@media screen and (max-width: 768px) {
+  .container-index .container-box .box-click img {
+    width: 100px;
+    left: -5em;
+  }
+}
+.container-index .container-box .box-click .box {
   width: 300px;
   background-image: url("../img/box-click.svg");
   background-position: center;
@@ -94,11 +141,21 @@ SUPPORTS - MIXINS
   height: 400px;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.box-click .box:hover {
+.container-index .container-box .box-click .box:hover {
   cursor: pointer;
   background-size: 120%;
   background-image: url("../img/box-click-open.svg");
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media screen and (max-width: 768px) {
+  .container-index .container-box .box-click .box:hover {
+    background-size: 120%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-index .container-box .box-click .box {
+    width: 200px;
+  }
 }
 
 .container-peraturan .hero-peraturan {
@@ -129,24 +186,66 @@ SUPPORTS - MIXINS
 }
 .container-peraturan .container-header .header h1 {
   color: #000000;
-  font-size: 15px;
+  font-size: 33px;
   font-weight: 700;
   font-family: var(--montserrat);
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-peraturan .container-header .header h1 {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-peraturan .container-header .header h1 {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container-peraturan .container-header .header h1 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan .container-header .header h1 {
+    font-size: 19px;
+    margin-bottom: 1em;
+  }
+}
 .container-peraturan .container-header .header p {
   color: #000000;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 600;
   font-family: var(--montserrat);
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-peraturan .container-header .header p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-peraturan .container-header .header p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container-peraturan .container-header .header p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan .container-header .header p {
+    font-size: 13px;
+  }
+}
 .container-peraturan .container-contoh {
-  gap: 4em;
+  gap: 10em;
   display: flex;
+  flex-wrap: wrap;
+  padding: 7em 4em;
   justify-content: center;
-  padding: 7em 10em 0px 13em;
 }
 .container-peraturan .container-contoh .card {
-  width: 700px;
+  width: 300px;
   height: 370px;
   gap: 1em;
   display: grid;
@@ -156,12 +255,52 @@ SUPPORTS - MIXINS
   background: #ffdccc;
   border-radius: 25px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-peraturan .container-contoh .card {
+    height: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-peraturan .container-contoh .card {
+    height: 370px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container-peraturan .container-contoh .card {
+    height: 370px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan .container-contoh .card {
+    height: 450px;
+  }
+}
 .container-peraturan .container-contoh .card h1 {
   height: 20px;
   color: #000000;
   font-size: 13px;
   font-weight: 700;
   font-family: var(--montserrat);
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-peraturan .container-contoh .card h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-peraturan .container-contoh .card h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container-peraturan .container-contoh .card h1 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan .container-contoh .card h1 {
+    font-size: 16px;
+  }
 }
 .container-peraturan .container-contoh .card p {
   height: 300px;
@@ -170,6 +309,26 @@ SUPPORTS - MIXINS
   font-weight: 600;
   font-family: var(--montserrat);
   padding: 0 2em 2em 2em;
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-peraturan .container-contoh .card p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-peraturan .container-contoh .card p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container-peraturan .container-contoh .card p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan .container-contoh .card p {
+    font-size: 12px;
+  }
 }
 .container-peraturan .container-contoh .card img {
   height: 150px;
@@ -220,11 +379,21 @@ SUPPORTS - MIXINS
   padding-top: 5em;
   justify-content: left;
 }
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga .container-header {
+    justify-content: center;
+  }
+}
 .container-peraturan-keluarga .container-header .header {
   width: 70%;
   display: grid;
   text-align: left;
   padding-left: 7em;
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga .container-header .header {
+    padding-left: 0;
+  }
 }
 .container-peraturan-keluarga .container-header .header h1 {
   color: #000000;
@@ -233,6 +402,7 @@ SUPPORTS - MIXINS
   font-family: var(--montserrat);
 }
 .container-peraturan-keluarga .container-header .header p {
+  margin-top: 1em;
   color: #000000;
   font-size: 15px;
   font-weight: 600;
@@ -242,6 +412,11 @@ SUPPORTS - MIXINS
   padding: 1em 7em;
   display: flex;
   width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga .container-button {
+    padding: 1em 4em;
+  }
 }
 .container-peraturan-keluarga .container-button a {
   border-radius: 25px;
@@ -256,6 +431,22 @@ SUPPORTS - MIXINS
   background: #3d3d3d;
   padding-right: 5em;
 }
+@media screen and (max-width: 1420px) {
+  .container-peraturan-keluarga .container-button .btn1 {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container-peraturan-keluarga .container-button .btn1 {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga .container-button .btn1 {
+    width: 40%;
+    padding-right: 2em;
+  }
+}
 .container-peraturan-keluarga .container-button .btn2 {
   width: 10%;
   margin-left: -6em;
@@ -265,6 +456,21 @@ SUPPORTS - MIXINS
 .container-peraturan-keluarga .container-button .btn2:hover {
   margin-left: -5.5em;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media screen and (max-width: 1200px) {
+  .container-peraturan-keluarga .container-button .btn2 {
+    margin-left: -5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga .container-button .btn2 {
+    width: 35%;
+    margin-left: -2em;
+  }
+  .container-peraturan-keluarga .container-button .btn2:hover {
+    margin-left: -3em;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
 }
 .container-peraturan-keluarga .container-contoh {
   gap: 5em;
@@ -372,6 +578,12 @@ SUPPORTS - MIXINS
   text-align: left;
   padding-left: 7em;
 }
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga-contoh2 .container-header .header {
+    width: 100%;
+    padding-left: 2em;
+  }
+}
 .container-peraturan-keluarga-contoh2 .container-header .header p {
   color: #000000;
   font-size: 15px;
@@ -409,6 +621,12 @@ SUPPORTS - MIXINS
   width: 100%;
   padding-top: 7em;
 }
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga-contoh2 .container-button {
+    padding: 0em 4em;
+    padding-top: 7em;
+  }
+}
 .container-peraturan-keluarga-contoh2 .container-button a {
   border-radius: 25px;
   display: flex;
@@ -422,6 +640,12 @@ SUPPORTS - MIXINS
   padding-right: 5em;
   background: #3d3d3d;
 }
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga-contoh2 .container-button .btn1 {
+    width: 40%;
+    padding-right: 2em;
+  }
+}
 .container-peraturan-keluarga-contoh2 .container-button .btn2 {
   width: 10%;
   margin-left: -6em;
@@ -431,6 +655,16 @@ SUPPORTS - MIXINS
 .container-peraturan-keluarga-contoh2 .container-button .btn2:hover {
   margin-left: -5.5em;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-keluarga-contoh2 .container-button .btn2 {
+    width: 35%;
+    margin-left: -2em;
+  }
+  .container-peraturan-keluarga-contoh2 .container-button .btn2:hover {
+    margin-left: -3em;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
 }
 .container-peraturan-keluarga-contoh2 .container-contoh {
   gap: 5em;
@@ -506,13 +740,20 @@ SUPPORTS - MIXINS
 }
 
 .container-peraturan-sekolah .hero-peraturan {
-  position: absolute;
-  bottom: 0;
+  background-image: url("../img/bg-peraturan-sekolah.svg");
+  top: 0;
   width: 100%;
+  height: 100vh;
   z-index: -999;
-}
-.container-peraturan-sekolah .hero-peraturan img {
-  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 .container-peraturan-sekolah .container-header {
   display: flex;
@@ -524,6 +765,12 @@ SUPPORTS - MIXINS
   display: grid;
   text-align: left;
   padding-left: 7em;
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-sekolah .container-header .header {
+    width: 100%;
+    padding-left: 2em;
+  }
 }
 .container-peraturan-sekolah .container-header .header h1 {
   color: #000000;
@@ -585,6 +832,12 @@ SUPPORTS - MIXINS
 @media screen and (max-width: 1250px) {
   .container-peraturan-sekolah .container-contoh .card {
     width: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-sekolah .container-contoh .card {
+    width: 250px;
+    padding-left: 2em;
   }
 }
 .container-peraturan-sekolah .container-contoh .card h1 {
@@ -660,6 +913,12 @@ SUPPORTS - MIXINS
   text-align: left;
   padding-left: 7em;
 }
+@media screen and (max-width: 480px) {
+  .container-peraturan-masyarakat .container-header .header {
+    width: 100%;
+    padding-left: 2em;
+  }
+}
 .container-peraturan-masyarakat .container-header .header h1 {
   color: #000000;
   font-size: 20px;
@@ -677,6 +936,12 @@ SUPPORTS - MIXINS
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2em 7em;
+}
+@media screen and (max-width: 480px) {
+  .container-peraturan-masyarakat .container-peraturan {
+    padding: 2em 4em;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .container-peraturan-masyarakat .container-peraturan h1 {
   padding: 1em 0;
@@ -811,6 +1076,7 @@ SUPPORTS - MIXINS
 .navbar {
   border: none;
   z-index: 999;
+  background: transparent;
 }
 .navbar li {
   display: flex;
@@ -842,6 +1108,7 @@ SUPPORTS - MIXINS
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .navbar .navbar-ul .left-navbar a {
   color: #161c2d;
@@ -853,10 +1120,26 @@ SUPPORTS - MIXINS
 .navbar .navbar-ul .left-navbar a:hover {
   border: none;
 }
+@media screen and (max-width: 480px) {
+  .navbar .navbar-ul .left-navbar img, .navbar .navbar-ul .left-navbar a {
+    display: none;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}
 .navbar .navbar-ul .right-navbar {
   gap: 2em;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .navbar .navbar-ul .right-navbar {
+    gap: 0;
+  }
+  .navbar .navbar-ul .right-navbar a {
+    justify-items: center;
+    width: 86px;
+    font-size: 12px;
+  }
 }
 .navbar .navbar-ul .right-navbar img {
   width: 30px;
