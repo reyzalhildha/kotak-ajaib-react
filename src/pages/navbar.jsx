@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Box from "../assets/img/box.png";
 import Profile from "../assets/img/profile.svg";
 
