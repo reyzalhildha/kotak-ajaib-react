@@ -39,12 +39,14 @@ SUPPORTS - MIXINS
 
 .container-index {
   position: relative;
+  height: 100vh;
   gap: 1em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 @media screen and (max-width: 768px) {
   .container-index {
+    margin-top: 13em;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -52,12 +54,30 @@ SUPPORTS - MIXINS
   position: relative;
 }
 .container-index .container-board .student-board {
-  position: relative;
+  bottom: 0;
+  position: absolute;
   display: grid;
   align-items: end;
 }
-.container-index .container-board .student-board img {
-  width: 80%;
+@media screen and (min-width: 1400px) {
+  .container-index .container-board .student-board img {
+    width: 1246px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+  .container-index .container-board .student-board img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .container-index .container-board .student-board img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-index .container-board .student-board img {
+    width: 80%;
+  }
 }
 .container-index .container-board .student-board .frame-board {
   position: absolute;
@@ -137,19 +157,19 @@ SUPPORTS - MIXINS
   background-image: url("../img/box-click.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 120%;
   height: 400px;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .container-index .container-box .box-click .box:hover {
   cursor: pointer;
-  background-size: 120%;
+  background-size: 110%;
   background-image: url("../img/box-click-open.svg");
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 @media screen and (max-width: 768px) {
   .container-index .container-box .box-click .box:hover {
-    background-size: 120%;
+    background-size: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1073,10 +1093,67 @@ SUPPORTS - MIXINS
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.container-soal-materi {
+  position: relative;
+  height: 100vh;
+}
+.container-soal-materi .hero-kotak-ajaib {
+  background-color: #ffffff;
+}
+.container-soal-materi .container-body {
+  top: 5em;
+  width: 100%;
+  position: absolute;
+  padding: 0 4em;
+  padding-bottom: 6em;
+}
+.container-soal-materi .container-body h1 {
+  text-align: left;
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+@media screen and (max-width: 768px) {
+  .container-soal-materi .container-body h1 {
+    font-size: 18px;
+  }
+}
+.container-soal-materi .container-body ul,
+.container-soal-materi .container-body li {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--montserrat);
+}
+@media screen and (max-width: 768px) {
+  .container-soal-materi .container-body ul,
+  .container-soal-materi .container-body li {
+    font-size: 12px;
+  }
+}
+.container-soal-materi .container-body .soal li {
+  list-style: none;
+}
+.container-soal-materi .container-body .pilihan-ganda li {
+  margin-left: 2em;
+  list-style: lower-alpha;
+}
+.container-soal-materi .container-body .title {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--montserrat);
+}
+@media screen and (max-width: 768px) {
+  .container-soal-materi .container-body .title {
+    font-size: 12px;
+  }
+}
 .navbar {
   border: none;
   z-index: 999;
-  background: transparent;
+  background: white;
 }
 .navbar li {
   display: flex;
@@ -1121,7 +1198,8 @@ SUPPORTS - MIXINS
   border: none;
 }
 @media screen and (max-width: 480px) {
-  .navbar .navbar-ul .left-navbar img, .navbar .navbar-ul .left-navbar a {
+  .navbar .navbar-ul .left-navbar img,
+  .navbar .navbar-ul .left-navbar a {
     display: none;
     transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
   }

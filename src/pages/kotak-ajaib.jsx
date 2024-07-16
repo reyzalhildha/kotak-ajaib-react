@@ -40,7 +40,7 @@ function Page() {
                                         <p>Pertanyaan Pendidikan Pancasila</p>
                                     </div>
                                     <div className="button">
-                                        <a href={Pertanyaan} target="_self">Open</a>
+                                        <a href="/soal-materi" target="_self">Open</a>
                                     </div>
                                 </div>
 

@@ -26,11 +26,13 @@
 
 .container-index {
     position: relative;
+    height: 100vh;
     gap: 1em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     @media screen and (max-width: 768px) {
+        margin-top: 13em;
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -39,18 +41,28 @@
 
         .student-board {
             // position: absolute;
-            // bottom: 0;
             // left: 0;
-            position: relative;
+            bottom: 0;
+            position: absolute;
             display: grid;
             align-items: end;
 
             img {
-                width: 80%;
+                @media screen and (min-width: 1400px) {
+                    width: 1246px;
+                }
 
-                // @media screen and (max-width: 1600px) {
-                //     width: 80%;
-                // }
+                @media screen and (min-width: 900px) and (max-width:1400px) {
+                    width: 100%;
+                }
+
+                @media screen and (min-width: 600px) and (max-width: 800px) {
+                    width: 60%;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 80%;
+                }
             }
 
             .frame-board {
@@ -136,18 +148,18 @@
                 background-image: url("../img/box-click.svg");
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: 150%;
+                background-size: 120%;
                 height: 400px;
                 @include standard-transition();
 
                 &:hover {
                     cursor: pointer;
-                    background-size: 120%;
+                    background-size: 110%;
                     background-image: url("../img/box-click-open.svg");
                     @include standard-transition();
 
                     @media screen and (max-width: 768px) {
-                        background-size: 120%;
+                        background-size: 100%;
                     }
                 }
 
@@ -1041,10 +1053,79 @@
     }
 }
 
+.container-soal-materi {
+    position: relative;
+    height: 100vh;
+
+    .hero-kotak-ajaib {
+        background-color: #ffffff;
+    }
+
+    .container-body {
+        top: 5em;
+        width: 100%;
+        position: absolute;
+        padding: 0 4em;
+        padding-bottom: 6em;
+
+        h1 {
+            text-align: left;
+            color: black;
+            font-size: 32px;
+            font-weight: 700;
+            font-family: var(--montserrat);
+
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+
+        ul,
+        li {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: var(--montserrat);
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+
+        .soal li {
+            list-style: none;
+        }
+
+        .pilihan-ganda li {
+            margin-left: 2em;
+            list-style: lower-alpha;
+        }
+
+        .title {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: var(--montserrat);
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+
+        .left {
+            // border: 1px solid black;
+        }
+
+        .right {
+            // border: 1px solid red;
+        }
+    }
+}
+
 .navbar {
     border: none;
     z-index: 999;
-    background: transparent;
+    background: white;
 
     li {
         display: flex;
@@ -1095,7 +1176,8 @@
             }
 
             @media screen and (max-width: 480px) {
-                img, a {
+                img,
+                a {
                     display: none;
                     @include standard-transition();
                 }

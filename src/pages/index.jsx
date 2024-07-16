@@ -12,18 +12,12 @@ function Index() {
                     <div className="container-board">
                         <div className="student-board">
                             <img src={StudentBoard} alt="Student Board" />
-
-                            <div className="frame-board">
-                                <p className="text-board">
-                                    Selamat datang di Pembelajaran Pendidikan Pancasila Materi “Menaati Peraturan Disekitarku”
-                                </p>
-                            </div>
                         </div>
                     </div>
 
                     <div className="container-box">
                         <div className="box-click">
-                            <img src={ClickHere} alt="click here"></img>
+                            {/* <img src={ClickHere} alt="click here"></img> */}
                             <a href="peraturan">
                                 <div className="box"></div>
                             </a>
