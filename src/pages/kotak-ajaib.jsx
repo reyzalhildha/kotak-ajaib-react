@@ -52,7 +52,8 @@ function Page() {
                                         <p>Games</p>
                                     </div>
                                     <div className="button">
-                                        <a href="https://wordwall.net/play/74473/644/898" target="_self">Open</a>
+                                        {/* <a href="https://wordwall.net/play/74473/644/898" target="_self">Open</a> */}
+                                        <a href="https://wordwall.net/resource/76707209" target="_self">Open</a>
                                     </div>
                                 </div>
 

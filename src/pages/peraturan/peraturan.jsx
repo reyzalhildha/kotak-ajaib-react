@@ -60,7 +60,7 @@ function Page() {
                                 </a>
                             </div>
                         </div>
-                        <div className="card">
+                        {/* <div className="card">
                             <img src={PeraturanMasyarakat} alt="peraturan masyarakat" />
                             <h1>C.  Peraturan di masyarakat</h1>
                             <p>
@@ -78,7 +78,7 @@ function Page() {
                                     <img src={ChevronRight} alt="chevron right"></img>
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
