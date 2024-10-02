@@ -26,7 +26,7 @@ function Index() {
                     </a>
                 </div>
             </section>
-        </>
+        </> 
     );
 }
 
